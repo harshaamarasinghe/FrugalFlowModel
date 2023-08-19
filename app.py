@@ -26,7 +26,7 @@ def get_prediction():
                             'prediction' : pred[0]
                         }
                     )
-                return jsonify({predTemp})
+                return jsonify({"result": predTemp})
             except Exception as e:
                 print("Error predicting:", e)
         except Exception as e:
